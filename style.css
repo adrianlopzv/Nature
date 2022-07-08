@@ -92,7 +92,7 @@ body {
     text-align: center;
 }
 
-.fb-btn, .s-in-btn {
+.gg-btn, .s-in-btn {
     width: 230px;
     height: 42px;
     margin: 5px 0px;
@@ -104,14 +104,16 @@ body {
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
 }
 
-.fb-btn {
+.gg-btn {
     color: #fff;
     background-color: #3ab54a;
+    cursor: pointer;
 }
 
 .s-in-btn {
     color: #171717;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .new-btn {
@@ -194,9 +196,13 @@ body {
     margin: 10px 0px;
     border: none;
     outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .sign-in-page input:focus,
