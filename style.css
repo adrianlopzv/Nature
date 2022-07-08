@@ -1,0 +1,263 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f8f8f8;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 62.5%;
+}
+ .sign-in {
+     width: 320px;
+     height: 640px;
+     box-shadow: 6px 6px 30px #d1d9e6;
+     border-radius: 20px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #f8f8f8;
+     box-sizing: border-box;
+     overflow: hidden;
+     z-index: 1;
+ }
+
+.bg-circule {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    transform: translateX(-60%);
+    background-color: #ecf0f3;
+    border-radius: 50%;
+}
+
+.main-page {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/summer-tree-green.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.top-bar {
+    width: 180px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 3.8rem;
+    color: #f8f8f8;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.title p {
+    color: rgb(200, 200, 200);
+    font-size:small;
+    line-height: .5rem;
+}
+
+.title p a:link, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title p a:hover {
+    /* text-decoration: underline; */
+    font-weight: 600;
+}
+
+.form-btns {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.fb-btn, .s-in-btn {
+    width: 230px;
+    height: 42px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.fb-btn {
+    color: #fff;
+    background-color: #3ab54a;
+}
+
+.s-in-btn {
+    color: #171717;
+    background-color: #fff;
+}
+
+.new-btn {
+    color: rgba(252, 252, 252, 0.8);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+ button:active {
+    transform: scale(1.05);
+}
+
+.form-btns a {
+    color: #d1d9e6;
+    line-height: 2.5rem;
+}
+
+.main-page {
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 2px 6px 12px #d1d9e6;
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cancel i {
+    color: #111111;
+}
+
+.sign-in-page form, .sign-up-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in-page, .sign-up-page {
+    width: 100%;
+    height: 45%;
+}
+
+.sign-in-page input, .sign-up-page input {
+    width: 220px;
+    height: 40px;
+    margin: 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    outline: none;
+    color: #191919;
+    border-radius: 10px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.sign-in-page input::placeholder, 
+.sign-up-page input::placeholder {
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.sign-in-page button,
+.sign-up-page button {
+    width: 220px;
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-page input:focus,
+.sign-up-page input:focus {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-page button:hover,
+.sign-up-page button:hover {
+    background-color: #3ab54a;
+    color: #fff;
+    transition: all ease 0.3s;
+}
+
+.sign-in-page, .sign-up-page,
+.cancel{
+    display: none;
+}
+
+.active-sign-in .form-btns,
+.active-sign-up .form-btns {
+    display: none;
+}
+
+.active-sign-in .main-page,
+.active-sign-up .main-page {
+    height: 55%;
+    border-radius: 0% 0% 50% 50%/0% 0% 20% 20%;
+    animation: main 0.3s linear;
+}
+
+.active-sign-in .sign-in-page,
+.active-sign-in .cancel {
+    display: flex;
+}
+
+.active-sign-up .sign-up-page,
+.active-sign-up .cancel {
+    display: flex;
+}
+
+.active-sign-in .cancel i,
+.active-sign-up .cancel i {
+    animation: cancel 0.5s;
+}
+
+@keyframes main {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 55%;
+    }
+}
+@keyframes cancel {
+    0% {
+        opacity: 0;
+        transform: rotate(-190deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
